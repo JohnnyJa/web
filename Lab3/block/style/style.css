@@ -1,0 +1,80 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+div{
+
+}
+
+#container{
+    display: block;
+    width: 700px;
+    height: 600px;
+    border: 1px solid;
+}
+
+#container > #menu, #footer, #middle-content, #side-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{
+    
+    width: 68%;
+    height: 13%;
+    background-color: aqua;
+    float: right;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;    
+}
+
+#header >h3{
+    margin-left: 23%;
+}
+
+#menu{
+    width: 32%;
+    height: 87%;
+    background-color: blue;
+    float: left;
+}
+#content{
+    display: block;
+    height: 87%;
+}
+#middle-content{
+    background-color: yellow;
+    height: 85%;
+    width: 36%;
+    float: left;
+}
+#side-content{
+    float: right;
+    background-color: green;
+    width: 32%;
+    height: 100%;
+}
+#footer{
+    float: left;
+    width: 68%;
+    background-color: red;
+    height:13%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;    
+}
+
+#footer >h3{
+    margin-right: 23%;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <title>Боровков І.І. ІП-11 </title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Lab1, KPI, Front-end">
+    <meta name="description" content="My first front-end lab">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/huebee.css" media="screen">
+</head>
+
+<body>
+    <div class="form-background">
+        <form name="input-form" class="input-form" onsubmit="return false">
+            <label for="fullname">ПІБ</label>
+            <input type="text" name="fullname" id="fullname">
+            <label class="wrong-input" for="fullname" hidden>Неправильний ПІБ. Має бути: "Боровков І.І".</label>
+
+            <label for="id-card">Номер ID-картки</label>
+            <input type="text" name="id-card" id="id-card">
+            <label class="wrong-input" for="id-card" hidden>Неправильний номер ID-картки. Має бути:"ІІ №123456".</label>
+
+            <label for="faculty">Факультет</label>
+            <input type="text" name="faculty" id="faculty">
+            <label class="wrong-input" for="faculty" hidden>Неправильний факультет. Має бути:"ФІОТ".</label>
+
+            <label for="birth-date">Дата народження</label>
+            <input type="text" name="birth-date" id="birth-date">
+            <label class="wrong-input" for="birth-date" hidden>Неправильна дата. Має бути:"26.11.2003".</label>
+
+            <label for="address">Адреса</label>
+            <input type="text" name="address" id="address">
+            <label class="wrong-input" for="address" hidden>Неправильна адреса. Має бути:"м. Прилуки".</label>
+
+            <button onclick="validateForm()" id="submit-button">Submit</button>
+        </form>
+        <div id="info">
+            <ul id="info-ul">
+            </ul>
+        </div>
+    </div>
+    
+
+    <div id="table-div">
+        <!-- <table id="MyTable"></table> -->
+        <!-- use inputs so users can set colors with text -->
+        <input class="color-input  set-bg-elem" data-huebee='{ "setBGColor":".set-bg-elem"}'  />
+        <span class="swatch set-bg-elem">text</span>
+    </div>
+
+
+    <script src="script/huebee.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
